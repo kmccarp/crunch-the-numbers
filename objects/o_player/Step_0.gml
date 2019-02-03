@@ -53,7 +53,7 @@ if (colliding_enemy != noone) {
 			EnemyDie();
 			other.current_xp += level;
 		} else {
-			PlayerDie("You got et.\nYour final score was " + string(other.current_xp) + ".");
+			PlayerDie("You were eaten by a " + string(level) + "!\nYour final score was " + string(other.current_xp) + ".");
 		}
 	}
 }

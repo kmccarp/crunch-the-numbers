@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//Camera_ResizeDisplay();
 var max_enemies_per_level = 5;
 if (instance_exists(o_player)) {
 	var max_enemies_total = o_player.current_level * 5 + 5;

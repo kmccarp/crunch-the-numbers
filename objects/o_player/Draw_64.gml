@@ -6,7 +6,9 @@ draw_set_color(c_olive);
 //font_add_enable_aa(false);
 draw_set_halign(fa_left);
 draw_set_valign(fa_bottom);
-draw_text_transformed(room_width - 300, 50, "Avoid: " + string(current_level), 3, 3, 0);
+var window_width = window_get_width();
+var window_height = window_get_height();
+draw_text_transformed(window_width - 300, 50, "Avoid: " + string(current_level), 3, 3, 0);
 
 // draw health bar
 var health_bar_width = 200;
@@ -15,7 +17,7 @@ var health_bar_height = 10;
 var health_bar_color = c_green;
 
 var health_bar_x = 50;
-var health_bar_y = room_height - 50;
+var health_bar_y = window_height - 50;
 /*
 draw_set_color(c_white);
 draw_rectangle(health_bar_x, health_bar_y, health_bar_x + health_bar_width, health_bar_y + health_bar_height, false)
