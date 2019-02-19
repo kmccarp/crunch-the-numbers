@@ -26,9 +26,9 @@ var inner_health_bar_width = (200 - health_bar_padding * 2) * 1;
 var inner_health_bar_height = health_bar_height - health_bar_padding * 2;
 draw_set_color(health_bar_color);
 draw_rectangle(health_bar_x + health_bar_padding, health_bar_y + health_bar_padding,
-	health_bar_x + health_bar_padding + inner_health_bar_width,
-	health_bar_y + health_bar_padding + inner_health_bar_height,
-	false);
+  health_bar_x + health_bar_padding + inner_health_bar_width,
+  health_bar_y + health_bar_padding + inner_health_bar_height,
+  false);
 */
 
 // draw xp bar
@@ -52,10 +52,10 @@ var inner_xp_bar_width = (200 - xp_bar_padding * 2) * scale;
 var inner_xp_bar_height = xp_bar_height - xp_bar_padding * 2;
 draw_set_color(xp_bar_color);
 draw_rectangle(xp_bar_x + xp_bar_padding, xp_bar_y + xp_bar_padding,
-	xp_bar_x + xp_bar_padding + inner_xp_bar_width,
-	xp_bar_y + xp_bar_padding + inner_xp_bar_height,
-	false);
-	
+  xp_bar_x + xp_bar_padding + inner_xp_bar_width,
+  xp_bar_y + xp_bar_padding + inner_xp_bar_height,
+  false);
+  
 // draw score
 draw_set_color(c_white);
 draw_text_transformed(xp_bar_x, xp_bar_y - 50, "Score: " + string(current_xp), 1.5, 1.5, 0);

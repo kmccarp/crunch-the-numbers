@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
+            "Value": {
+                "id": "cb80acc0-1c67-402e-a12c-ea1d85005cef",
+                "resourcePath": "options\\ios\\options_ios.yy",
+                "resourceType": "GMiOSOptions"
+            }
+        },
+        {
             "Key": "9ab27331-256d-41b2-bc5c-e07e17a49c2e",
             "Value": {
                 "id": "9860cf93-8687-4150-9cbf-a86bee0450ba",
@@ -183,11 +191,27 @@
             }
         },
         {
+            "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
+            "Value": {
+                "id": "fa2875b7-0be5-411c-921e-a4944f428657",
+                "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
+                "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
             "Key": "a7a5a022-174b-4907-9783-40ad7a0eb90e",
             "Value": {
                 "id": "9b5a8e17-fe73-4970-809d-76a5d9350184",
                 "resourcePath": "scripts\\GetExperienceRequired\\GetExperienceRequired.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "d2909aa1-ddd0-4b4c-af1c-26690e7106d5",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
             }
         },
         {
@@ -255,11 +279,27 @@
             }
         },
         {
+            "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
+            "Value": {
+                "id": "07191d0f-80ad-469c-af90-d86409baf605",
+                "resourcePath": "options\\android\\options_android.yy",
+                "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
             "Key": "eee8ae4f-0e47-46f3-863f-98e6509601fb",
             "Value": {
                 "id": "04adb905-a0c9-4bcf-ba5e-8f2f471ccef3",
                 "resourcePath": "objects\\o_player\\o_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "2bc75aaa-c11b-4586-a777-8c63a078d9e4",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {

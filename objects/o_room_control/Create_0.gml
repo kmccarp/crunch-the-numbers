@@ -7,7 +7,7 @@ global.initial_width = window_get_width();
 
 enemies_spawned = ds_map_create();
 for(var i = 1; i <= 10; i++) {
-	enemies_spawned[? i] = 0;
+  enemies_spawned[? i] = 0;
 }
 
 total_enemies_spawned = 0;

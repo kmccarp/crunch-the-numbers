@@ -3,8 +3,8 @@
 
 var enemy_level = self.level;
 with (o_room_control) {
-	total_enemies_spawned -= 1
-	enemies_spawned[? enemy_level] -= 1;
+  total_enemies_spawned -= 1
+  enemies_spawned[? enemy_level] -= 1;
 }
 
 instance_destroy();
