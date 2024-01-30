@@ -5,13 +5,15 @@ image_index = current_level - 1;
 image_xscale = current_level - 1;
 image_yscale = current_level - 1;
 
-key_left = keyboard_check(ord("A")) || keyboard_check(vk_left);
-key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
-key_up = keyboard_check(ord("W")) || keyboard_check(vk_up);
-key_down = keyboard_check(ord("S")) || keyboard_check(vk_down);
+var key_left = keyboard_check(ord("A")) || keyboard_check(vk_left);
+var key_right = keyboard_check(ord("D")) || keyboard_check(vk_right);
+var key_up = keyboard_check(ord("W")) || keyboard_check(vk_up);
+var key_down = keyboard_check(ord("S")) || keyboard_check(vk_down);
 
 var h_accel = key_right * acceleration + -1 * key_left * acceleration;
-if (h_accel = 0) {
+
+// decelerate if no longer accelerating
+if (h_accel = 0 && h_speed != 0) {
   h_accel = -1 * sign(h_speed) * deceleration;
 }
 if (h_speed > 0) {
@@ -19,9 +21,12 @@ if (h_speed > 0) {
 } else {
   h_speed = max(-max_move_speed, h_speed + h_accel);
 }
+show_debug_message("h_speed is now " + string(h_speed));
 
 var v_accel = key_down * acceleration + -1 * key_up * acceleration;
-if (v_accel = 0) {
+
+// decelerate if no longer accelerating
+if (v_accel = 0 && v_speed != 0) {
   v_accel = -1 * sign(v_speed) * deceleration;
 }
 if (v_speed > 0) {
@@ -29,6 +34,7 @@ if (v_speed > 0) {
 } else {
   v_speed = max(-max_move_speed, v_speed + v_accel);
 }
+show_debug_message("v_speed is now " + string(v_speed));
 
 if (x + h_speed >= room_width || x + h_speed <= 0) {
   while (x + sign(h_speed) < room_width && x + sign(h_speed) > 0) {

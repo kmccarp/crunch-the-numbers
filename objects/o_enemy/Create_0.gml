@@ -3,7 +3,7 @@
 
 level = 0
 
-max_move_speed = 25;
+max_move_speed = 0.25;
 acceleration = 0.25;
 deceleration = 0.25;
 h_speed = 0;
