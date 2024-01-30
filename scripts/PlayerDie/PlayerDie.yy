@@ -1,8 +1,11 @@
 {
-    "id": "3d0757d8-022c-4fb9-ab47-97685c107a9b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "PlayerDie",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "PlayerDie",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
 }
